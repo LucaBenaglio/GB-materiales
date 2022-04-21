@@ -200,7 +200,29 @@ footer{
     height: 60px;
     display: flex;
     justify-content: flex-end;
+    animation-name: animacion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes animacion{
+    0%{
+        background-color: #333;
+    }
+    25%{
+        background-color: #555;
+    }
+    50%{
+        background-color: #777;
+    }
+    75%{
+        background-color: #555;
+    }
+    100%{
+        background-color: #333;
+    }
+}
+
 
 .nav-responsive-ul{
     display: none;
@@ -209,6 +231,7 @@ footer{
 .nav-index-ul{
     background-color: black;
     padding-right: 10px;
+    padding: 15px;
 }
 
 .nav-index-li{
@@ -220,10 +243,16 @@ footer{
     font-family: 'Roboto', sans-serif;
     margin: 10px;
     text-decoration: none;
+    transition-property: background, color, padding;
+    transition-duration: .5s, .5s, 0s;
+    transition-timing-function: ease-in;
 }
 
 .nav-index-li a:hover{
-    color: #888;
+    color: #000;
+    background-color: #ccc;
+    padding: 8px 5px;
+    border-radius: 10px;
 }
 
 
