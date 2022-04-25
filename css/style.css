@@ -194,6 +194,24 @@ footer{
 
 
                                     /* grid header */
+
+.nav-css{
+    grid-area: header;
+}
+
+.boton-css{
+    border-color: #333;
+    background-color: #222;
+    color: #fff;
+}
+
+.boton-css:hover{
+    background-color: #555;
+    border-color: #333;
+}
+
+
+
 .grid-header-index{
     grid-area: header;
     background-color: black;
@@ -368,6 +386,8 @@ footer{
     font-size: x-large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid-aside-index div{
@@ -387,14 +407,13 @@ footer{
     justify-content: space-between;
 }
 
-.copy-index{
+.copy-index p{
     color: blanchedalmond;
-    font-family: 'Roboto', sans-serif;
     padding-left: 10px;
     display: flex;
     align-self: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
+    font-size: 18px;
 }
 
 .grid-footer-index a{
@@ -410,9 +429,9 @@ footer{
 
             /* respnosive */
 
-@media only screen and (max-width: 580px){
-    .copy-index{
-        font-size: 10px;
+@media only screen and (max-width: 600px){
+    .copy-index p{
+        font-size: 13px;
     }
     .redes-index{
         font-size: 10px; 
@@ -420,8 +439,8 @@ footer{
 }
 
 @media only screen and (max-width: 440px){
-    .copy-index{
-        font-size: 7px;
+    .copy-index p{
+        font-size: 8px;
     }
     .redes-index{
         font-size: 7px; 
@@ -612,14 +631,13 @@ footer{
     justify-content: space-between;
 }
 
-.copy-productos{
+.copy-productos p{
     color: blanchedalmond;
-    font-family: 'Roboto', sans-serif;
     padding-left: 10px;
     display: flex;
     align-self: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
+    font-size: 18px;
 }
 
 .grid-footer-productos a{
@@ -635,9 +653,9 @@ footer{
 
             /* responsive */
 
-@media only screen and (max-width: 580px){
-    .copy-productos{
-        font-size: 10px;
+@media only screen and (max-width: 600px){
+    .copy-productos p{
+        font-size: 12px;
     }
     .redes-productos{
         font-size: 10px; 
@@ -645,8 +663,8 @@ footer{
 }
 
 @media only screen and (max-width: 440px){
-    .copy-productos{
-        font-size: 7px;
+    .copy-productos p{
+        font-size: 9px;
     }
     .redes-productos{
         font-size: 7px; 
