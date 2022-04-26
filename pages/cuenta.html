@@ -4,51 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>GB materiales</title>
 </head>
-<body class="cuenta">
+<body class="body-cuenta">
 
-    <header class="header">
-        
-        <nav>
+    <nav class="navbar navbar-expand-lg nav-css navbar-dark" style="background-color: #000;">
+        <div class="container-fluid">
+            <a class="navbar-brand">GB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
 
-            <div class="header-menu">
-                <a href="../index.html" class="header-menu-a">Inicio</a>
-                <a href="./productos.html" class="header-menu-a">Productos</a>
-                <a href="./cuenta.html" class="header-menu-a">Mi cuenta</a>
-                <a href="./nosotros.html" class="header-menu-a">Sobre nosotros</a>
-                <a href="./contactanos.html" class="header-menu-a">Contactanos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cuenta.html">Mi Cuenta</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                    </li>
+
+                    
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 input-css" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success boton-css" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container w-75 color-css my-5 rounded">
+        <div class="row aling-items-stretch">
+
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
             </div>
 
-        </nav>
+            <div class="col bg-white p-5 rounded-end">
+                <div>
+                    <h2 class="fw-bolt text-center pt-5 mb-5">Bienvenido</h2>
+                </div>
 
-    </header>
 
-        <section class="cuenta-section">
-            <h4>Registrate ahora</h4>
-            <input class="controls" type="text" name="nombres" placeholder="Ingrese su nombre">
-            <input class="controls" type="text" name="apellido" placeholder="Ingrese su apellido">
-            <input class="controls" type="text" name="email" placeholder="Ingrese su email">
-            <input class="controls" type="password" name="contraseña" placeholder="Ingrese su contraseña">
-            <input class="controls" type="password" name="contraseña" placeholder="Confirme su contraseña">
-            <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-            <input class="botons" type="submit" value="Registrar">
-            <p><a href="cuenta2.html">¿Ya tienes una cuenta?</a></p>
-        </section>
+                <!-- Login -->
 
-    <footer class="pie">
 
-        <div class="pie-div1">
-            <h3 class="pie-div1-h3">Todos los derechos reservados - Copyright</h3>
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" name="nombre" class="form-control">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" name="apellido" class="form-control">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" name="contraseña" class="form-control">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Confirme su contraseña</label>
+                        <input type="password" name="contraseña" class="form-control">
+                    </div>
+
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="conected" class="form-check-input">
+                        <label for="conected" class="form-check-label">Mantener sesion iniciada</label>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="sumbit" class="btn btn-primary">Registrarse</button>
+                    </div>
+
+                    <div class="my-3">
+                        <span>Ya tienes una cuenta? <a href="./cuenta2.html">Haz click aqui</a></span>
+
+                    </div>
+                </form>
+
+            <!-- Login con redes sociales -->
+
+                <div class="container w-100 my-3">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar sesion con</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1"> 
+                                <div class="row aling-items-center">
+
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="../img/logo-f.svg" width="32">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Facebook
+                                    </div>
+
+                                </div>
+                            </button>
+                        </div>
+
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 my-1"> 
+                                <div class="row aling-items-center">
+
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="../img/logo-g.png" width="32">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Google
+                                    </div>
+
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="grid-footer-productos">
+
+        <div class="copy-productos">
+            <p>Todos los derechos reservados - Copyright</p>
         </div>
 
-        <div class="pie-div2">
-            <a href="instagram.com" target="_blank" class="pie-div2-a">Instagram</a>
-            <a href="facebook.com" target="_blank" class="pie-div2-a">Facebook</a>
+        <div class="redes-productos">
+            <a href="instagram.com" target="_blank">Instagram</a>
+            <a href="facebook.com" target="_blank">Facebook</a>
         </div>
         
     </footer>
 
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 </html>
