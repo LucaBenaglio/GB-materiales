@@ -198,6 +198,7 @@ footer{
 .nav-css{
     grid-area: header;
     width: 100%;
+    height: 60px;
 }
 
 .boton-css{
@@ -549,9 +550,17 @@ footer{
 
                                     /* grid main */
 
+.css-luca{
+    box-shadow: 2px 4px 15px 0 black;
+}
+
+.css-luca div{
+    border: 1px solid #ddd;
+}
+
 .grid-main-productos{
     grid-area: main;
-    width: 80vw;
+    width: 100vw;
     margin-left: 21px;
 }
 
@@ -626,6 +635,7 @@ footer{
 
 .grid-footer-productos{
     background-color: black;
+    width: 100%;
     grid-area: footer;
     height: 40px;
     display: flex;
@@ -729,6 +739,20 @@ footer{
     border: 2px solid #684b2b;
     width: 50%;
     box-shadow: 2px 4px 15px 0 black;
+}
+
+.div-p p{
+    margin: 20px;
+    padding: 50px;
+    background-color: #fdffffff;
+    border: 1px solid black;
+    box-shadow: 7px 13px 37px black;
+}
+
+@media only screen and (max-width: 500px){
+    .div-p p{
+        font-size: small;
+    }
 }
 
 /* -------------------------------------------------------------------------CONTACTANOS------------------------------------------------------------------------- */
