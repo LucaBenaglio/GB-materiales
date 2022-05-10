@@ -1,4 +1,10 @@
 @import "../variables/variables";
+@import "../sass2/maps";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+@import "../sass2/operaciones";
+@import "../sass2/condicionales";
+
 .inicio{
     background-image: linear-gradient(rgba(70, 70, 70, 0.75), rgba(70, 70, 70, 0.75)),
     url(../img/imagen2.jpg);

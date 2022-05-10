@@ -1,0 +1,57 @@
+@import "../variables/variables";
+@import "../sass2/maps";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+@import "../sass2/operaciones";
+@import "../sass2/condicionales";
+
+footer{
+    display: flex;
+    align-self: flex-end;
+}
+
+.pie{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pie-div1{
+    @include fuentes-footer;
+    padding-left: 10px;
+    display: flex;
+    align-self: center;
+    font-size: small;
+}
+
+.pie-div2{
+    display: flex;
+    flex-direction: row;
+}
+
+.pie-div2-a{
+    @include fuentes-footer;
+    margin: 10px;
+}
+
+            /* responsive */
+
+@media only screen and (max-width: 580px){
+    .pie-div1{
+        font-size: 10px;
+    }
+    .pie-div2-a{
+        font-size: 10px; 
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .pie-div1{
+        font-size: 7px;
+    }
+    .pie-div2-a{
+        font-size: 7px; 
+    }
+}

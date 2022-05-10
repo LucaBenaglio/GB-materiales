@@ -1,3 +1,10 @@
+@import "../variables/variables";
+@import "../sass2/maps";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+@import "../sass2/operaciones";
+@import "../sass2/condicionales";
+
 .body-cuenta{
     background: #ddd;
     background: linear-gradient(to right, #ccc, #ddd);
