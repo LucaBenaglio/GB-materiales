@@ -1,0 +1,229 @@
+.productos{
+    background-color: #ccc;
+}
+
+.grid-container-productos{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "footer footer footer footer";
+    height: 100vh;
+}
+
+
+
+
+
+                                    /* grid header */
+.grid-header-productos{
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+}
+
+.grid-header-productos div h1{
+    color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    display: flex;
+    align-self: center;
+    margin: 10px;
+}
+
+.grid-header-productos div a{
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+
+.nav-productos{
+    padding-right: 10px;
+}
+
+
+
+
+
+        /* responsive */
+
+@media only screen and (max-width: 520px){
+    .nav-index-ul{
+        display: none;
+    }
+    .nav-productos div a{
+        display: block;
+        font-size: 12px;
+    }
+    .nav-productos div a{
+        background-color: black;
+        padding-right: 10px;
+    }
+    
+    .nav-productos div a{
+        display: inline-block;
+    }
+    
+    .nav-productos div a{
+        color: blanchedalmond;
+        font-family: 'Roboto', sans-serif;
+        margin: 10px;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .nav-productos div a{
+        font-size: 10px;
+        margin: 5px;
+    }   
+}
+
+@media only screen and (max-width: 380px){
+    .nav-productos div a{
+        margin: 1px;
+        font-size: 9px;
+    }   
+}
+
+
+
+
+                                    /* grid main */
+
+.css-luca{
+    box-shadow: 2px 4px 15px 0 black;
+}
+
+.css-luca div{
+    border: 1px solid #ddd;
+}
+
+.grid-main-productos{
+    grid-area: main;
+    width: 100vw;
+    margin-left: 21px;
+}
+
+.section-productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-productos div{
+    max-width: 450px;
+    border: 3px solid #000;
+    background-color: #e8c39e;
+    margin: 25px;
+    box-shadow: 2px 4px 15px 0 black;
+    border-color: #684b2b;
+    border-style: solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.section-productos div img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+
+                                    /* grid aside */
+.grid-aside-productos{
+    grid-area: aside;
+    width: 350px;
+    width: 17vw;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    color: #fff;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+    border: 2px solid #000;
+}
+
+.grid-aside-productos div{
+    padding: 20px;
+}
+
+            /* responsive */
+@media only screen and (max-width: 1250px){
+    .grid-container-productos{
+        grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer";
+    }
+    .grid-aside-productos{
+        display: none;
+    }
+    .grid-main-productos section{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+                                    /* grid footer */
+
+.grid-footer-productos{
+    background-color: black;
+    width: 100%;
+    grid-area: footer;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-productos p{
+    color: blanchedalmond;
+    padding-left: 10px;
+    display: flex;
+    align-self: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.grid-footer-productos a{
+    color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+}
+
+.redes-productos{
+    display: flex;
+    flex-direction: row;
+}
+
+            /* responsive */
+
+@media only screen and (max-width: 600px){
+    .copy-productos p{
+        font-size: 12px;
+    }
+    .redes-productos{
+        font-size: 10px; 
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .copy-productos p{
+        font-size: 9px;
+    }
+    .redes-productos{
+        font-size: 7px; 
+    }
+}

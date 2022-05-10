@@ -1,55 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* -------------------------------------------------------------------------MENU Y FOOTER------------------------------------------------------------------------- */
-/* Footer */
-footer {
-  display: flex;
-  align-self: flex-end; }
-
-.pie {
-  background-color: black;
-  width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: space-between; }
-
-.pie-div1 {
-  color: blanchedalmond;
-  font-family: 'Roboto', sans-serif;
-  padding-left: 10px;
-  display: flex;
-  align-self: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: small; }
-
-.pie-div2 {
-  display: flex;
-  flex-direction: row; }
-
-.pie-div2-a {
-  color: blanchedalmond;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 10px; }
-
-/* responsive */
-@media only screen and (max-width: 580px) {
-  .pie-div1 {
-    font-size: 10px; }
-  .pie-div2-a {
-    font-size: 10px; } }
-
-@media only screen and (max-width: 440px) {
-  .pie-div1 {
-    font-size: 7px; }
-  .pie-div2-a {
-    font-size: 7px; } }
-
-/* -------------------------------------------------------------------------INDEX------------------------------------------------------------------------- */
-/* Body */
 .inicio {
   background-image: linear-gradient(rgba(70, 70, 70, 0.75), rgba(70, 70, 70, 0.75)), url(../img/imagen2.jpg);
   background-repeat: no-repeat;
@@ -92,7 +41,7 @@ footer {
 
 .grid-header-index {
   grid-area: header;
-  background-color: black;
+  background-color: #000;
   height: 60px;
   display: flex;
   justify-content: flex-end; }
@@ -101,7 +50,7 @@ footer {
   display: none; }
 
 .nav-index-ul {
-  background-color: black;
+  background-color: #000;
   padding-right: 10px;
   padding: 15px; }
 
@@ -131,7 +80,7 @@ footer {
     display: block;
     font-size: 12px; }
   .nav-responsive-ul {
-    background-color: black;
+    background-color: #000;
     padding-right: 10px; }
   .nav-li-responsive {
     display: inline-block; }
@@ -155,7 +104,7 @@ footer {
 
 .grid-main-index div {
   margin: 40px;
-  box-shadow: 7px 13px 37px black; }
+  box-shadow: 7px 13px 37px #000; }
 
 /* responsive */
 @media only screen and (max-width: 1570px) {
@@ -203,7 +152,7 @@ footer {
 
 /* grid footer */
 .grid-footer-index {
-  background-color: black;
+  background-color: #000;
   grid-area: footer;
   height: 40px;
   display: flex;
@@ -239,8 +188,6 @@ footer {
   .redes-index {
     font-size: 7px; } }
 
-/* -------------------------------------------------------------------------PRODUCTOS------------------------------------------------------------------------- */
-/* Body */
 .productos {
   background-color: #ccc; }
 
@@ -404,8 +351,6 @@ footer {
   .redes-productos {
     font-size: 7px; } }
 
-/* -------------------------------------------------------------------------MI CUENTA------------------------------------------------------------------------- */
-/* Body */
 .body-cuenta {
   background: #ddd;
   background: linear-gradient(to right, #ccc, #ddd); }
@@ -433,8 +378,6 @@ footer {
     border-bottom: solid 1px #000;
     width: 100%; } }
 
-/* -------------------------------------------------------------------------NOSOTROS------------------------------------------------------------------------- */
-/* Body */
 .nosotros {
   display: flex;
   min-height: 100vh;
@@ -469,8 +412,6 @@ footer {
   .div-p p {
     font-size: small; } }
 
-/* -------------------------------------------------------------------------CONTACTANOS------------------------------------------------------------------------- */
-/* Body */
 .contactanos {
   display: flex;
   min-height: 100vh;
@@ -546,3 +487,52 @@ footer {
   color: #fff;
   cursor: pointer;
   float: right; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* -------------------------------------------------------------------------FOOTER------------------------------------------------------------------------- */
+/* Footer */
+footer {
+  display: flex;
+  align-self: flex-end; }
+
+.pie {
+  background-color: black;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between; }
+
+.pie-div1 {
+  color: blanchedalmond;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 10px;
+  display: flex;
+  align-self: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small; }
+
+.pie-div2 {
+  display: flex;
+  flex-direction: row; }
+
+.pie-div2-a {
+  color: blanchedalmond;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px; }
+
+/* responsive */
+@media only screen and (max-width: 580px) {
+  .pie-div1 {
+    font-size: 10px; }
+  .pie-div2-a {
+    font-size: 10px; } }
+
+@media only screen and (max-width: 440px) {
+  .pie-div1 {
+    font-size: 7px; }
+  .pie-div2-a {
+    font-size: 7px; } }

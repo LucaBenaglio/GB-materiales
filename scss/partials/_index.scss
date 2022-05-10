@@ -1,0 +1,283 @@
+@import "../variables/variables";
+.inicio{
+    background-image: linear-gradient(rgba(70, 70, 70, 0.75), rgba(70, 70, 70, 0.75)),
+    url(../img/imagen2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.grid-container-index{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside aside main"
+    "aside aside main"
+    "aside aside main"
+    "aside aside main"
+    "footer footer footer";
+    grid-template-rows: repeat(auto-fill, 1fr);
+    height: 100vh;
+}
+
+
+
+
+
+                                    /* grid header */
+
+.nav-css{
+    grid-area: header;
+    width: 100%;
+    height: 60px;
+}
+
+.nav-css div{
+    background-color: $color-black;
+    z-index: 1;
+}
+
+.nav-css div ul li{
+    border-radius: 5px;
+}
+
+.nav-css div ul li:hover{
+    background-color: #333;
+    border: 1px solid #fff;
+    transition-property: background, border;
+    transition-duration: .3s, 1s;
+}
+
+.boton-css{
+    border-color: #333;
+    background-color: #222;
+    color: #fff;
+}
+
+.boton-css:hover{
+    background-color: #555;
+    border-color: #333;
+}
+
+
+
+.grid-header-index{
+    grid-area: header;
+    background-color: $color-black;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.nav-responsive-ul{
+    display: none;
+}
+
+.nav-index-ul{
+    background-color: $color-black;
+    padding-right: 10px;
+    padding: 15px;
+}
+
+.nav-index-li{
+    display: inline-block;
+}
+
+.nav-index-li a{
+    color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    text-decoration: none;
+    transition-property: background, color, padding;
+    transition-duration: .5s, .5s, 0s;
+    transition-timing-function: ease-in;
+}
+
+.nav-index-li a:hover{
+    color: #000;
+    background-color: #ccc;
+    padding: 8px 5px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+            /* responsive */
+
+@media only screen and (max-width: 520px){
+    .nav-index-ul{
+        display: none;
+    }
+    .nav-responsive-ul{
+        display: block;
+        font-size: 12px;
+    }
+    .nav-responsive-ul{
+        background-color: $color-black;
+        padding-right: 10px;
+    }
+    
+    .nav-li-responsive{
+        display: inline-block;
+    }
+    
+    .nav-li-responsive a{
+        color: blanchedalmond;
+        font-family: 'Roboto', sans-serif;
+        margin: 10px;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .nav-responsive-ul{
+        font-size: 8px;
+    }   
+}
+
+
+
+
+
+
+
+                                    /* grid main */
+.grid-main-index{
+    grid-area: main;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-main-index div{
+    margin: 40px;
+    box-shadow: 7px 13px 37px $color-black;
+}
+
+
+
+
+
+
+            /* responsive */
+
+@media only screen and (max-width: 1570px){
+    .grid-main-index{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .grid-container-index{
+        grid-template-areas:    
+        "header header header"
+        "aside aside aside"
+        "aside aside aside"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    }
+    .grid-aside-index div{
+        font-size: 12px;
+    }
+    .grid-main-index{
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .grid-aside-index div{
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+                                    /* grid aside */
+.grid-aside-index{
+    grid-area: aside;
+    margin-left: 20px;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.grid-aside-index div{
+    padding: 40px;
+}
+
+.grid-aside-index:hover{
+    background-color: #0009;
+    transition-property: background;
+    transition-duration: 2s;
+}
+
+
+
+                                    /* grid footer */
+.grid-footer-index{
+    background-color: $color-black;
+    grid-area: footer;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-index p{
+    color: blanchedalmond;
+    padding-left: 10px;
+    display: flex;
+    align-self: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.grid-footer-index a{
+    color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+}
+
+.redes-index{
+    display: flex;
+    flex-direction: row;
+}
+
+            /* respnosive */
+
+@media only screen and (max-width: 600px){
+    .copy-index p{
+        font-size: 13px;
+    }
+    .redes-index{
+        font-size: 10px; 
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .copy-index p{
+        font-size: 8px;
+    }
+    .redes-index{
+        font-size: 7px; 
+    }
+}

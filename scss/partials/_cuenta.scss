@@ -1,0 +1,34 @@
+.body-cuenta{
+    background: #ddd;
+    background: linear-gradient(to right, #ccc, #ddd);
+}
+
+.bg{
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.color-css{
+    background-color: #fff;
+    box-shadow: 2px 4px 15px 0 black;
+}
+
+
+.h2-animacion{
+    padding: 2px;
+    animation-name: borde;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes borde{
+    from{
+        border-bottom: solid 1px #000;
+        width: 0%;
+    }
+    to{
+        border-bottom: solid 1px #000;
+        width: 100%;
+    }
+}
