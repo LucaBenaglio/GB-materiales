@@ -189,7 +189,9 @@
     font-size: 7px; } }
 
 .productos {
-  background-color: #ccc; }
+  background-color: #ccc;
+  width: 100vw;
+  overflow-x: hidden; }
 
 .grid-container-productos {
   display: grid;
